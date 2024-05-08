@@ -1,0 +1,393 @@
+rps@rps-virtual-machine:~$ history
+    1 sudo apt update
+    2  sudo nano /etc/resolv.conf 
+    3  sudo apt update
+    4  sudo apt upgrade
+    5  sudo apt install gcc++
+    6  sudo apt install gcc
+    7  sudo apt install build-essentials
+    8  sudo apt install build-essential
+    9  sudo apt install gdb
+   10  init 0
+   11  gcc --version
+   12  cd "/home/rps/Desktop/C Demo/" && gcc first.c -o first && "/home/rps/Desktop/C Demo/"first
+   13  sudo su
+   14  tar xvfz node_exporter-1.7.0.linux-amd64.tar.gz 
+   15  cd node_exporter-1.7.0.linux-amd64/
+   16  sudo mv node_exporter /usr/local/bin/
+   17  sudo tee /etc/systemd/system/node_exporter.service<<EOF
+   18  [Unit]
+   19  Description=Node Exporter
+   20  After=network.target
+   21   
+   22  [Service]
+   23  User=rps
+   24  Group=rps
+   25  Type=simple
+   26  ExecStart=/usr/local/bin/node_exporter
+   27   
+   28  [Install]
+   29  WantedBy=multi-user.target
+   30  EOF
+   31  sudo systemctl daemon-reload
+   32  sudo systemctl start node_exporter
+   33  sudo systemctl enable node_exporter
+   34  sudo systemctl status node_exporter
+   35  sudo apt install gcc
+   36  sudo apt install git
+   37  sudo apt install make
+   38  sudo apt install vim
+   39  sudo apt install g++
+   40  sudo apt install gedit
+   41  sudo apt install cmake
+   42  sudo apt install g++
+   43  cd
+   44  sudo apt update -y
+   45  sudo apt install mysql-server
+   46  sudo systemctl status mysql.service 
+   47  sudo mysql
+   48  sudo mysql_secure_installation
+   49  sudo mysql
+   50  sudo mysql_secure_installation
+   51  sudo mysql -u root -p
+   52  sudo snap install mysql-workbench-community
+   53  man touch
+   54  touch file1 file2 file3
+   55  ls
+   56  start file1
+   57  stat file1
+   58  touch -a file1
+   59  stat file1
+   60  touch -m file1
+   61  stat file1
+   62  touch -d "2024-05-06 11.40" file1
+   63  touch -d "06-05-2024 11.40" file1
+   64  
+   65  touch
+   66  man touch
+   67  touch file1.txt
+   68  ls
+   69  stat file1
+   70  statx file1
+   71  stat file1
+   72  touch -m file1
+   73  stat file1
+   74  touch -a file1
+   75  stat file1
+   76  touch file1 file2 file3
+   77  ls
+   78  stat file1
+   79  touch -a file1
+   80  stat file1
+   81  touch -m file1
+   82  stat file1
+   83  touch -d "2024-05-06 13:09" file1
+   84  stat file1
+   85  touch file1 file2 file3
+   86  ls
+   87  stat file1
+   88  touch -a file1
+   89  stat file1
+   90  touch -m file1
+   91  stat file1
+   92  touch -d "2025-04-12 4:34" file1
+   93  stat file1
+   94  touch -d "2024-05-06 1:36" file1
+   95  stat file1
+   96  touch file1 file2 file3
+   97  ls
+   98  touch file4.pdf
+   99  ls
+  100  touch myfile.txt
+  101  cp myfile.txt file.txt
+  102  cat file.txt
+  103  cat >> file.txt
+  104  cat myfile.txt
+  105  cat file.txt
+  106  cat >> file.txt
+  107  cat file.txt
+  108  man touch
+  109  mkdir F1
+  110  cd ~/Downloads
+  111  cp F1 
+  112  cp F1 >> Downloads
+  113  cd Desktop
+  114  cd Desktop mkdir F1
+  115  mkdir F1
+  116  cd F1
+  117  touch file1.txt file2.txt file3.txt
+  118  cat >> file1.txt
+  119  cd virtual-machine
+  120  cd rps-vitual-machine
+  121  cd rps@rps-virtual-machine
+  122  mkdir F1
+  123  touch file1.txt file2.txt file3.txt
+  124  cd Desktop
+  125  mkdir F1
+  126  cd F1
+  127  touch file1.txt file2.txt file3.txt
+  128  echo "Hello" >> file1.txt
+  129  echo "Hi" >> file2.txt
+  130  echo "Bye" >> file3.txt
+  131  cd ~/Downloads
+  132  cp -r ~/Desktop/F1
+  133  cp -r ~/Desktop/F1/
+  134  cp -r ~/Desktop/F1 .
+  135  ls
+  136  cd F1
+  137  cat file1.txt
+  138  cat file2.txt
+  139  cat file3.txt
+  140  man
+  141  man man
+  142  man ls
+  143  ls
+  144  touch sourav.txt
+  145  ls
+  146  ls -1
+  147  clear
+  148  cd sourav
+  149  clear
+  150  man
+  151  man man
+  152  pwd
+  153  cd Sourav
+  154  cd Documents
+  155  mkdir Sourav
+  156  pwd
+  157  cd Sourav
+  158  cd ~
+  159  cd /
+  160  pwd
+  161  cd ~
+  162  cd Sourav
+  163  pwd
+  164  cd ..
+  165  cd ../..
+  166  cd ~
+  167  pwd
+  168  clear
+  169  pwd
+  170  ls
+  171  pwd
+  172  cd /
+  173  ls
+  174  pwd
+  175  ls
+  176  cd bin
+  177  ls
+  178  pwd
+  179  cd..
+  180  cd ..
+  181  cd
+  182  pwd
+  183  cd Downloads/
+  184  cd..
+  185  cd ..
+  186  mkdir sourav
+  187  cd sourav
+  188  pwd
+  189  touch 1.txt
+  190  touch 2.txt
+  191  touch 3.txt
+  192  mkdir myfile
+  193  mv 1.txt myfile/
+  194  cp 2.txt myfile/
+  195  pwd
+  196  mkdir dey
+  197  rmdir dey
+  198  mkdir dey
+  199  cd dey
+  200  touch file1.txt
+  201  ls
+  202  rmdir dey
+  203  cd ..
+  204  rmdir dey
+  205  rm -rf dey
+  206  open <myfile>
+  207  open myfile
+  208  cd ..
+  209  cd sourav
+  210  open sourav
+  211  cd ..
+  212  open sourav
+  213  open myfile
+  214  open <myfile>
+  215  cd ..
+  216  cd sourav
+  217  cd
+  218  cd sourav
+  219  find . -name 1.txt
+  220  pwd
+  221  cd ..
+  222  pwd
+  223  find . sourav/ -name 1.txt
+  224  cd sourav
+  225  touch dey.txt
+  226  touch Dey.txt
+  227  find . -iname dey.txt
+  228  find . -name Dey.txt
+  229  find . -name dey.*
+  230  find . -name 1.*
+  231  find . -name *.txt
+  232  history
+  233  sudo apt-get update
+  234  traceroute
+  235  traceroute www.google.com
+  236  sudo apt instal traceroute
+  237  sudo apt install traceroute
+  238  traceroute www.google.com
+  239  ifconfig
+  240  sude apt install net tools
+  241  sudo apt install net-tools
+  242  ifconfig
+  243  man ifconfig
+  244  man ifconfig-a
+  245  ifconfig -a
+  246  man ifconfig
+  247  route -n
+  248  netstat -r
+  249  ip a
+  250  netstat -rn
+  251  hostname -I
+  252  cd.. F1
+  253  cd ..
+  254  cd Downloads
+  255  cd F1
+  256  ls -l 1.txt
+  257  ls -l file1.txt
+  258  clear
+  259  ls -l file1.txt 
+  260  ls -l file2.txt
+  261  touch sourav.pdf
+  262  cat << sourav.pdf
+  263  Helo
+  264  ls -l Dey.txt
+  265  ls -l file1.txt
+  266  touch tt.txt
+  267  rmdir tt.txt
+  268  ls
+  269  git init
+  270  ls
+  271  git clone http://github.com/SouravDeyGithub/SouravRepo.git
+  272  git init
+  273  git commit -m "Hello Class"
+  274  git config --global user.email "sd4029376@gmail.com"
+  275  git config --global user.name "Sourav Dey"
+  276  git commit -m "Hello Class"
+  277  git add .
+  278  git add.
+  279  git add .
+  280  git remote add origin http://github.com/SouravDeyGithub/SouravRepo.git
+  281  git push --set-upstream origin main
+  282  git pushu -u origin main
+  283  git push -u origin main
+  284  ls
+  285  ls -l
+  286  ls
+  287  git config --global user.name "SouravRepo"
+  288  git config --global user.email "sd4029376@gmail.com"
+  289  git init
+  290  git commit -m "Hello Class"
+  291  git add .
+  292  git remote add origin http://github.com/SouravDeyGithub/SouravRepo.git
+  293  git push -u origin main
+  294  git branch feature
+  295  git branch master
+  296  git branch -m feature
+  297  git switch feature
+  298  git checkout
+  299  ls
+  300  ls -l
+  301  cd ..
+  302  ls
+  303  git config --global user.email "sd4029376@gmail.com"
+  304  git config --global user.name "MyRepo"
+  305  git init
+  306  git commit -m "Hello Class"
+  307  git add .
+  308  git commit -m "Hello Class"
+  309  git clone http://github.com/SouravDeyGithub/MyRepo.git
+  310  ls
+  311  sudo apt-get update
+  312  sudo apt-get upgrade
+  313  ls
+  314  cd ..
+  315  ls
+  316  git init
+  317  git config --global user.email "sd4029376@gmail.com"
+  318  git config --global user.name "MyRepo"
+  319  git commit -m "Hello"
+  320  git add.
+  321  git add .
+  322  cd desktop
+  323  ls
+  324  cd desktop
+  325  cd Downloads/
+  326  cd Desktop
+  327  cd Desktop/
+  328  ls
+  329  cd Desktop
+  330  git config --global user.email "sd4029376@gmail.com"
+  331  git config --global user.name "MyRepo"
+  332  git init
+  333  git commit -m "Hello"
+  334  git add .
+  335  git branch -M main
+  336  git remote add origin http://github.com/SouravDeyGithub/MyRepo.git
+  337  git push -u origin main
+  338  git push --set-upstream origin main
+  339  ls
+  340  mkdir Projects
+  341  cd Projects
+  342  vi First Program
+  343  ls
+  344  cd Projects
+  345  vi First Program
+  346  ls
+  347  whoami
+  348  who
+  349  ls
+  350  pwd
+  351  whoami
+  352  who
+  353  ls
+  354  cd ..
+  355  sudo apt update
+  356  sudo apt install mariadb-server mariadb-client
+  357  sudo systemctl status mariadb
+  358  sudo mysql -u root -p
+  359  sudo apt install apache2 php
+  360  sudo systemctl status apache2
+  361  ls /etc/apache2/mods-available
+  362  sudo a2enmod rewrite
+  363  sudo systemctl restart apache2
+  364  sudo a2query -m
+  365  sudo nano /etc/apache2/envvars
+  366  sudo chown -Rf $(whoami):$(whoami) /var/www/html
+  367  sudo chown -Rf $(rps):$(rps) /var/www/html
+  368  sudo chown -Rf $(sourav):$(sourav) /var/www/html
+  369  sudo nano /etc/apache2/envvars
+  370  sudo chown -Rf $(rps):$(rps) /var/www/html
+  371  sudo nano /etc/apache2/envvars
+  372  sudo chown -Rf $(rps):$(rps) /var/www/html
+  373  sudo chown -Rf $(whoami):$(whoami) /var/www/html
+  374  sudo nano /etc/apache2/envvars
+  375  sudo chown -Rf $(whoami):$(whoami) /var/www/html
+  376  sudo nano /etc/apache2/envvars
+  377  sudo chown -Rf $(sourav):$(sourav) /var/www/html
+  378  sudo nano /etc/apache2/envvars
+  379  sudo chown -Rf $(whoami):$(whoami) /var/www/html
+  380  sudo systemctl restart apache2
+  381  sudo mysql -u root -p
+  382  sudo apt install apache2 php
+  383  sudo systemctl start apache2
+  384  rmdir
+  385  ls
+  386  cd ..
+  387  ls
+  388  history
+
+
+
+
